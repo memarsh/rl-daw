@@ -23,34 +23,33 @@ class DynaQ:
 		oldv = self.q.get((state, action), None)
 		if oldv == None:
 			self.q[(state,action)]=value
-    	else:
-      		self.q[(state,action)]=oldv+self.alpha*(value-oldv)
+    else:
+    	self.q[(state,action)]=oldv+self.alpha*(value-oldv)
 
 	# Choose A from S using policy derived from Q 
-  	def chooseAction(self,state):
-    	if random.random()<self.epsilon:
-      		action=random.choice(self.actions)
-    	else:
-      		q=[self.getQ(state,a) for a in self.actions]
-     		maxQ=max(q)
-      		count=q.count(maxQ)
-      		if count>1:
-        		best=[i for i in range(len(self.actions)) if q[i]==maxQ]
-        		i=random.choice(best)
-      		else:
-        		i=q.index(maxQ)
+  def chooseAction(self,state):
+   	if random.random()<self.epsilon:
+     	action=random.choice(self.actions)
+   	else:
+     	q=[self.getQ(state,a) for a in self.actions]
+    	maxQ=max(q)
+     	count=q.count(maxQ)
+     	if count>1:
+     		best=[i for i in range(len(self.actions)) if q[i]==maxQ]
+    		i=random.choice(best)
+  		else:
+     		i=q.index(maxQ)
+    		action=self.actions[i]
+   	return action
 
-      		action=self.actions[i]
-    	return action
-
-    # calculates R + gamma*max_a(Q(S', a))
-    # qnext = max_a(Q(S', a))
+  # calculates R + gamma*max_a(Q(S', a))
+  # qnext = max_a(Q(S', a))
 	def learn(self,state1,action1,reward,state2):
-    	maxqnew=max([self.getQ(state2,a) for a in self.actions])
-    	self.learnQ(state1,action1,reward+self.gamma*maxqnew)
+    maxqnew=max([self.getQ(state2,a) for a in self.actions])
+    self.learnQ(state1,action1,reward+self.gamma*maxqnew)
 
-    # update the model?
-    # Model(S, A) <- R, S' (but this task doesn't actually have deterministic states)
+  # update the model?
+  # Model(S, A) <- R, S' (but this task doesn't actually have deterministic states)
 
 	
 
