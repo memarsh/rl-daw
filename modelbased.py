@@ -1,13 +1,15 @@
 import random
 
-class DynaQ:
+
+
+class ModelBased:
 	def __init__(self, actions, states, epsilon=0.1, alpha=0.2, gamma=0.9):
 		self.q={} # this is a dictionary of the form: 
               	# key: (state, action)
               	# value: q_value 
 		self.model_P = {} # this is a dictionary of the form:
-						# key: (state, action, next_state)
-						# value: (probability)  ????????????????????
+						# key: (state, action)
+						# value: [state0_count, state1_count, state2_count]
     # may not need this, if we just use the actual reward that was received 
     self.model_R = {} # this is a dictionary of the form:
             # key: (state, action)
@@ -57,8 +59,7 @@ class DynaQ:
     # default 1.0 because if we've only seen it once, we think 
     # this transition is 100% likely
     oldp = self.model_P.get((state1, action, state2), 1.0)
-      
-    self.model_P[(state1, action)]=
+    self.model_P[(state1, action, state2)]=oldp
 
 	
 
