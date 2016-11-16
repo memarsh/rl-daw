@@ -43,7 +43,7 @@ class Agent():
 	def getCurrReward(self):
 		return self.currReward
 
-	# so Gaussian random walk (I think) works like this:
+	# so Gaussian random walk works like this (I think):
 	# get Gaussian noise
 	# check if the addition of this noise to the current value 
 	# 	will push it above or below the reflecting boundaries
@@ -115,7 +115,7 @@ class Agent():
 
 
 	# calculates the next state probabilistically
-	# may want to include some way to change these probabilities externally
+	# (may want to include some way to change these probabilities externally)
 	# the paper does say that this prob was fixed throughout the experiment
 	def calcNextState(self, currState, currAction):
 		nextState = 0
@@ -136,11 +136,11 @@ class Agent():
 		return nextState
 
 	def oneStep(self):
-		currAction = self.ai.chooseAction(self.currBoardState)
+		currAction = self.ai.chooseAction(self.currBoardState) # choose A from S using policy derived from Q
 		#print "action: ", currAction
-		nextBoardState = self.calcNextState(self.currBoardState, currAction)
+		nextBoardState = self.calcNextState(self.currBoardState, currAction) # observe S'
 		#print nextBoardState
-		self.currReward = self.calcReward(self.currBoardState, currAction)
+		self.currReward = self.calcReward(self.currBoardState, currAction) # observe R
 		self.updateRewardProb()
 		if self.lastAction != None:
 			self.ai.learn(self.lastBoardState, self.lastAction, self.currReward, self.currBoardState, currAction)
@@ -157,7 +157,7 @@ if __name__ == '__main__':
 	secondStage = None
 	secondStageChoice = None
 	finalReward = None
-	for step in range(40000):
+	for step in range(40000): # Repeat (for each step of episode):
 		agent.oneStep()
 		#tempLastBoardState = agent.getLastBoardState()
 		#tempLastAction = agent.getLastAction()
