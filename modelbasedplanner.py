@@ -1,8 +1,10 @@
 import random
 import numpy as np
 
+# This only uses the model of transition probabilities 
+# when updating the q-values in the planning stage 
 
-class ModelBased:
+class ModelBasedPlanner:
 	def __init__(self, actions, states, epsilon=0.1, alpha=0.2, gamma=0.9):
 		self.q={} # this is a dictionary of the form: 
               	# key: (state, action)
@@ -57,8 +59,6 @@ class ModelBased:
   # update the model?
   # this is not the best way to do this, but it's a place to start
   def updateModelProbabilities(self, state1, action, state2):
-    # default 1.0 because if we've only seen it once, we think 
-    # this transition is 100% likely
     oldp = self.model_P.get((state1, action), [0, 0, 0])
     oldp[state2] += 1
     self.model_P[(state1, action)]=oldp
@@ -73,6 +73,11 @@ class ModelBased:
     if total > 0:
       prob = counts[state2]/total
     return prob
+
+  def planWithModel(self, n):
+    for i in range(n):
+      state, action = random.choice(list(self.model_P.keys()))
+
 
 
 	
