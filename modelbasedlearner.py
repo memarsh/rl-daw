@@ -62,37 +62,16 @@ class ModelBasedLearner:
     def getQ(self, state, action):
         return self.q.get((state,action),0.0)
 
-  # calculates R + gamma*max_a(Q(S', a))
-  # qnext = max_a(Q(S', a))
-  #def learn(self,state1,action1,reward,state2):
-  #  qnext=self.getQ(state2,action2)
-  #  self.learnQ(state1,action1,reward+self.gamma*qnext)
-
-	# value = R + gamma*Q(S', A')
- 	# oldv = Q(S, A)
-	#def learnQ(self, state, action, value):
-	#	oldv = self.q.get((state, action), None)
-	#	if oldv == None:
-	#		self.q[(state,action)]=value
-  #  else:
-  #  	self.q[(state,action)]=oldv+self.alpha*(value-oldv)
-
-  # 
+    # I think we're recomputing Q each time, not updating it 
     def learnQ(self, state1, action, state2_level, reward):
-        oldv = self.q.get((state, action), None)
-        if oldv == None:
-            self.q[(state, action)]=reward 
-        else:
-            self.q[(state, action)]=oldv
-
-    def calc_next_value(self, state1, action, state2_level):
         next_value = 0
         for state2 in self.states[state2_level]:
             next_action = max_action(state2)
             temp_value = self.model_P[(state1, action, state2)] * self.getQ(state2, next_action)
             next_value += temp_value
         next_value *= self.gamma
-        return next_value
+        # Q will be new every time, but should be better, if I understand correctly (Rasmussen 2014 p.7)
+        self.q[(state1, action)] = reward + next_value
 
     # This function updates both the Q-values and the P_probabilities
     # uses a Sarsa-like update, in that the action in s' is what action was actually taken
@@ -100,8 +79,7 @@ class ModelBasedLearner:
     def learn(self, state1, action, reward, state2, action2, state2_level):
         qnext = self.getQ(state2, action2)
         self.updateTransitionProbabilites(state1, action, state2, state2_level)
-        self.learnQ(state1, )
-
+        self.learnQ(state1, action, state2_level, reward)
 
     # Choose A from S using policy derived from Q 
     # unless you are in a state in the terminal level, then just do "whatever"
