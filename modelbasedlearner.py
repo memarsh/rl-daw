@@ -1,5 +1,4 @@
 import random
-import numpy as np
 
 # This more or less reimplements the FORWARD learner described in
 # Glascher et al. 2010
