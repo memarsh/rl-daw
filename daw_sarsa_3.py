@@ -10,6 +10,7 @@ class Agent():
 		self.currBoardState = 0 # there are three possible boards (states)
 		self.currAction = None
 		self.currReward = 0
+		#stuff to set up the random walk of reward
 		self.SD = 0.025
 		self.lowerBoundary = 0.25
 		self.upperBoundary = 0.75

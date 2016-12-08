@@ -4,7 +4,7 @@ import random
 # Glascher et al. 2010
 
 # states is a dictionary of the form:
-# key: level
+# key: level (integers starting from 1)
 # value: list_of_states
 # since level numbering will start at 1, len(states) = terminal_level
 # and states[terminal_level] = all states that use the default action
