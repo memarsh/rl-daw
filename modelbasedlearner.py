@@ -38,8 +38,9 @@ class ModelBasedLearner:
                 next_level = 1
                 # I'm assuming I can safely assume that there will always be only one state in the first level!!!!!!!
                 # This could be easily changed if this assumption ever turned out to be wrong...
-                for state in self.states[level]:
-                    self.model_P[(state, self.default_action, self.states[next_level])] = 1.0
+                for state1 in self.states[level]:
+                    for state2 in self.states[next_level]:
+                    self.model_P[(state1, self.default_action, self.states[next_level])] = 1.0
             else:
                 for state in self.states[level]:
                     num_next_states = len(self.states[next_level])
@@ -51,11 +52,11 @@ class ModelBasedLearner:
     # keep track of which level it's on
     def updateTransitionProbabilites(self, state1, action, state2, state2_level):
         error = 1 - self.model_P(state1, action, state2)
-        self.model_P(state1, action, state2) += self.alpha*error
+        self.model_P[(state1, action, state2)] += self.alpha*error
         # now we have to reduce the probabilities of all states not arrived in
         for level_state in self.states[state2_level]:
             if level_state != state2:
-                self.model_P(state1, action, level_state) *= (1-self.alpha)
+                self.model_P[(state1, action, level_state)] *= (1-self.alpha)
 
 
     def getQ(self, state, action):

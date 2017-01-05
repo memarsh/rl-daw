@@ -1,15 +1,16 @@
 import random
-import modelbasedlearner as mbl
+import modelbasedlearner_2 as mbl
 
 class Agent():
-	def __init__(self):
+	def __init__(self, randomReward = True, case1 = 0.25, case2 = 0.5, case3 = 0.5, case4 = 0.75):
 		state_dict = {1:[0], 2:[1, 2]}
 		self.ai = mbl.ModelBasedLearner(actions=["left", "right"], states = state_dict)
 		self.lastAction = None
 		self.lastState = None
 		self.numLevels = len(state_dict)
 		self.firstLevel = 1
-		self.currState = 0
+		self.currBoardState = 0
+		self.lastBoardState = None
 		self.currLevel = 1
 		self.currAction = None
 		self.currReward = 0
@@ -131,23 +132,57 @@ class Agent():
 					nextState = 2
 		return nextState
 
-	def calcNextState(self):
+	def calcNextLevel(self):
 		if self.currLevel == self.numLevels:
 			return self.firstLevel
 		else:
 			return self.currLevel + 1
 
 	def oneStep(self):
+		#print ""
+		#print "debug:"
+		#print "    ", self.lastBoardState, self.lastAction, self.currBoardState, self.currLevel
 		currAction = self.ai.chooseAction(self.currBoardState)
+		#print "  and the current action is", currAction
 		nextBoardState = self.calcNextState(self.currBoardState, currAction)
 		self.currReward = self.calcReward(self.currBoardState, currAction)
 		self.updateRewardProb() #bookkeeping step
+		
 		if self.lastAction != None:
-			self.ai.learn(self.lastBoardState, self.lastAction, self.currReward, self.currBoardState, self.currLevel)
+			#print "  learning is happening"
+			if self.ai.learn(self.lastBoardState, self.lastAction, self.currReward, self.currBoardState, self.currLevel) == None:
+				return None
 		# more bookkeeping
 		self.lastBoardState = self.currBoardState
 		self.currBoardState = nextBoardState
-		self.currLevel = self.calcNextState()
-		self.lastAction = currAction	
+		self.currLevel = self.calcNextLevel()
+		self.lastAction = currAction
+		return 1	
+
+if __name__ == '__main__':
+	agent = Agent()
+
+	#print "firstStageChoice secondStage secondStageChoice finalReward"
+	firstStageChoice = None
+	secondStage = None
+	secondStageChoice = None
+	finalReward = None
+	for step in range(40000): # Repeat (for each step of episode):
+		if agent.oneStep() == None:
+			print "oneStep broke"
+			break
+		#tempLastBoardState = agent.getLastBoardState()
+		#tempLastAction = agent.getLastAction()
+		#tempCurrReward = agent.getCurrReward()
+		#tempCurrBoardState = agent.getCurrBoardState()
+		if step%2 == 0: # in stage 1
+			firstStageChoice = agent.getLastAction()
+			secondStage = agent.getCurrBoardState()
+			#print agent.getLastBoardState(), agent.getLastAction(), agent.getCurrReward(), agent.getCurrBoardState()
+		else: # in stage 2
+			secondStageChoice = agent.getLastAction()
+			finalReward = agent.getCurrReward()
+			print firstStageChoice, secondStage, secondStageChoice, finalReward
+			#print "          ", agent.getLastBoardState(), agent.getLastAction(), agent.getCurrReward()
 
 	
