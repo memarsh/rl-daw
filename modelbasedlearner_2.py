@@ -7,7 +7,7 @@ import random
 # value: list_of_states
 # since level numbering will start at 1, len(states) = terminal_level
 class ModelBasedLearner:
-    def __init__(self, actions, states, epsilon=0.1, alpha=0.2, gamma=0.9):
+    def __init__(self, actions, states, epsilon=0.25, alpha=0.2, gamma=0.9):
         self.q={} # this is a dictionary of the form: 
                     # key: (state, action)
                     # value: q_value 

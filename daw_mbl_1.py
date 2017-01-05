@@ -167,7 +167,7 @@ if __name__ == '__main__':
 	secondStage = None
 	secondStageChoice = None
 	finalReward = None
-	for step in range(40000): # Repeat (for each step of episode):
+	for step in range(400000): # Repeat (for each step of episode):
 		if agent.oneStep() == None:
 			print "oneStep broke"
 			break
