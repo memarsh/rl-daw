@@ -1,12 +1,20 @@
 import random
-import modelbasedlearner_2 as mbl
+import modelbased as mb
 
-# Implements the Daw task and learns the transition probabilities (supposedly) 
+# Implements the Daw task without learning the transition probabilities 
 
 class Agent():
 	def __init__(self, randomReward = True, case1 = 0.25, case2 = 0.5, case3 = 0.5, case4 = 0.75):
 		state_dict = {1:[0], 2:[1, 2]}
-		self.ai = mbl.ModelBasedLearner(actions=["left", "right"], states = state_dict)
+		transition_dict = {(0, "left", 1):0.7,
+							(0, "left", 2):0.3,
+							(0, "right", 1):0.3,
+							(0, "right", 2):0.7,
+							(1, "left", 0):1.0,
+							(1, "right", 0):1.0,
+							(2, "left", 0):1.0,
+							(2, "right", 0):1.0}
+		self.ai = mb.ModelBased(actions=["left", "right"], states = state_dict, transitions=transition_dict)
 		self.lastAction = None
 		self.lastState = None
 		self.numLevels = len(state_dict)
@@ -169,7 +177,7 @@ if __name__ == '__main__':
 	secondStage = None
 	secondStageChoice = None
 	finalReward = None
-	for step in range(400000): # Repeat (for each step of episode):
+	for step in range(40000): # Repeat (for each step of episode):
 		if agent.oneStep() == None:
 			print "oneStep broke"
 			break

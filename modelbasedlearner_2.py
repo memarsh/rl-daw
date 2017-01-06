@@ -61,7 +61,7 @@ class ModelBasedLearner:
         return self.q.get((state,action),0.0)
 
     # I think we're recomputing Q each time, not updating it 
-    def learnQ(self, state, action, reward, value):
+    def learnQ(self, state, action, value):
         oldv = self.q.get((state, action), None)
         if oldv==None:
             self.q[(state, action)]=value
@@ -79,15 +79,13 @@ class ModelBasedLearner:
         return value
 
     # This function updates both the Q-values and the P_probabilities
-    # uses a Sarsa-like update, in that the action in s' is what action was actually taken
-    # (not the argmax of the policy)
     def learn(self, state1, action, reward, state2, state2_level):
         if state2 not in self.states[state2_level]:
             print "State " + str(state2) + " is not in level " + str(state2_level)
             return None
         self.updateTransitionProbabilites(state1, action, state2, state2_level)
         qnext = self.calc_value(state1, action, state2_level)
-        self.learnQ(state1, action, state2_level, reward+self.gamma*qnext)
+        self.learnQ(state1, action, reward+self.gamma*qnext)
         return 1
 
     # Choose A from S using policy derived from Q 
