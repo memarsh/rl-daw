@@ -5,7 +5,7 @@ import numpy as np
 # it doesn't learn them
 
 class ModelBased:
-    def __init__(self, actions, states, transitions, epsilon=0.1, alpha=0.2, gamma=0.9):
+    def __init__(self, actions, states, transitions, epsilon=0.1, alpha=0.3, gamma=0.5):
         self.q={} # this is a dictionary of the form: 
                 # key: (state, action)
                 # value: q_value 
@@ -21,6 +21,7 @@ class ModelBased:
         self.gamma = gamma
         self.actions = actions
         self.states = states
+        self.prev = None
 
     def getQ(self, state, action):
         return self.q.get((state,action),0.0)
@@ -33,15 +34,32 @@ class ModelBased:
             self.q[(state,action)]=value
         else:
             self.q[(state,action)]=oldv+self.alpha*(value-oldv)
+            #print (state, action), ':', oldv, '->', value
+    
 
     # calculates R + gamma*max_a(Q(S', a))
     # qnext = max_a(Q(S', a))
     def learn(self, state1, action, reward, state2, state2_level):
+
+        if state1 == 0:
+            assert reward==0
+
         if state2 not in self.states[state2_level]:
             print "State " + str(state2) + " is not in level " + str(state2_level)
             return None
         qnext = self.calc_value(state1, action, state2_level)
         self.learnQ(state1, action, reward+self.gamma*qnext)
+        if state2_level == 2:
+            self.prev = state1, action, reward, state2, state2_level
+        elif state2_level == 1:
+            if self.prev != None:
+                #print '----->',
+                self.learn(*self.prev)    
+                pass
+
+                #state1, action, reward, state2, state2_level = self.prev 
+                #action2 = 'right' if action == 'left' else 'left'
+                #self.learn(state1, action2, reward, state2, state2_level)    
         return 1
 
     # this will be replaced by the neural part eventually
@@ -56,13 +74,20 @@ class ModelBased:
 
     # Choose A from S using policy derived from Q 
     def chooseAction(self,state):
-        if random.random()<self.epsilon:
-            return random.choice(self.actions)
-        else:
-            return self.max_action(state)
+        #if random.random()<self.epsilon:
+        #    return random.choice(self.actions)
+        #else:
+        #    return self.max_action(state)
+
+            noise = 0.05
+            q=[self.getQ(state,a)+random.normalvariate(0, noise) for a in self.actions]
+            i=q.index(max(q))
+            action=self.actions[i]
+            return action
 
     def max_action(self, state):
         q=[self.getQ(state,a) for a in self.actions]
+
         maxQ=max(q)
         count=q.count(maxQ)
         if count>1:

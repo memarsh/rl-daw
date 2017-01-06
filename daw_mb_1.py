@@ -23,6 +23,7 @@ class Agent():
 		self.lastBoardState = None
 		self.currLevel = 1
 		self.currAction = None
+		self.pastReward = 0
 		self.currReward = 0
 		# stuff to set up the random walk of reward
 		self.SD = 0.025
@@ -160,12 +161,13 @@ class Agent():
 		
 		if self.lastAction != None:
 			#print "  learning is happening"
-			if self.ai.learn(self.lastBoardState, self.lastAction, self.currReward, self.currBoardState, self.currLevel) == None:
+			if self.ai.learn(self.lastBoardState, self.lastAction, self.pastReward, self.currBoardState, self.currLevel) == None:
 				return None
 		# more bookkeeping
 		self.lastBoardState = self.currBoardState
 		self.currBoardState = nextBoardState
 		self.currLevel = self.calcNextLevel()
+		self.pastReward = self.currReward
 		self.lastAction = currAction
 		return 1	
 
