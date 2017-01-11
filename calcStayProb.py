@@ -146,4 +146,4 @@ class CalcStayProb():
 if __name__ == "__main__":
 	# something here to parse the input string for the correct file name
 	calculator = CalcStayProb()
-	calculator.doItAll("trial_4.txt")
+	calculator.doItAll("trial_5.txt")
