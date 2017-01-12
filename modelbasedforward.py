@@ -1,10 +1,12 @@
 import random
 import numpy as np
 
+# Uses the Q-update strategy found in Daw et al. 2011 supplemental materials
+
 # This one is given the transition probabilities up front, 
 # it doesn't learn them
 
-class ModelBased:
+class ModelBasedForward:
     def __init__(self, actions, states, transitions, epsilon=0.1, alpha=0.3, gamma=0.5):
         self.q={} # this is a dictionary of the form: 
                 # key: (state, action)
@@ -47,23 +49,23 @@ class ModelBased:
         if state2 not in self.states[state2_level]:
             print "State " + str(state2) + " is not in level " + str(state2_level)
             return None
-        qnext = self.calc_value(state1, action, state2_level)
-        self.learnQ(state1, action, reward+self.gamma*qnext)
-        if state2_level == 2:
-            self.prev = state1, action, reward, state2, state2_level
-        elif state2_level == 1:
-            if self.prev != None:
-                #print '----->',
-                self.learn(*self.prev)    
-                pass
+        
+        # "state1" is state 0
+        if state2_level == 2: # we are currently learning the value of the first stage (state 0)
+            # recompute the Q-values for each possible action based on 
+            # current estimates of transition probabilities and rewards at stage 2
+            for a in self.actions:
+                self.q[(state1, a)] = self.calc_value(state1, a, state2_level)
 
-                #state1, action, reward, state2, state2_level = self.prev 
-                #action2 = 'right' if action == 'left' else 'left'
-                #self.learn(state1, action2, reward, state2, state2_level)    
+        # "state1" is either state 1 or 2
+        elif state2_level == 1: # we are currently learning the value of the second state (state 1 or 2)
+            #qnext = self.calc_value(state1, action, state2_level)
+            self.learnQ(state1, action, reward)
+         
         return 1
 
     # this will be replaced by the neural part eventually
-    # state2_level could be replaced by just all the states
+    # state2_level could possibly be replaced by just all the states
     def calc_value(self, state1, action, state2_level):
         value = 0
         for state2 in self.states[state2_level]:
@@ -79,12 +81,13 @@ class ModelBased:
         #else:
         #    return self.max_action(state)
 
-            noise = 0.05
-            q=[self.getQ(state,a)+random.normalvariate(0, noise) for a in self.actions]
-            i=q.index(max(q))
-            action=self.actions[i]
-            return action
+        noise = 0.05
+        q=[self.getQ(state,a)+random.normalvariate(0, noise) for a in self.actions]
+        i=q.index(max(q))
+        action=self.actions[i]
+        return action
 
+    # returns the action with the highest Q-value
     def max_action(self, state):
         q=[self.getQ(state,a) for a in self.actions]
 
