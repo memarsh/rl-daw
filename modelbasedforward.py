@@ -1,8 +1,6 @@
 import random
 import numpy as np
 
-# This still has the softmax action selection
-
 # This one is given the transition probabilities up front, 
 # it doesn't learn them
 
@@ -81,7 +79,6 @@ class ModelBased:
         #else:
         #    return self.max_action(state)
 
-            # remove comment above if you decide to do this differently
             noise = 0.05
             q=[self.getQ(state,a)+random.normalvariate(0, noise) for a in self.actions]
             i=q.index(max(q))
