@@ -42,10 +42,12 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 self.reward_prob = self.rng.uniform(self.lower_boundary, self.upper_boundary, size=(2,2)) 
                 self.history = [] # history of actions chosen in state 0 and state seen as a result
                 self.rewards = [] # history of rewards received in terminal states
+                self.chosen_action = 'S0'
 
             # environment node function
             # passes appropriate information around at correct time intervals
             def node_function(self, t, value):
+                chosen = self.chosen_action
                 if t >= self.value_wait_times[0]:
                     self.values[0] = value
                     self.value_wait_times[0] = (self.intervals_count+1.5)*p.T_interval
@@ -54,7 +56,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                     self.values[1] = value
                     self.value_wait_times[1] = (self.intervals_count+2)*p.T_interval
 
-                    self.choose_action()
+                    self.chosen_action = self.choose_action()
                     self.intervals_count += 1
                     self.consider_action = 'L'
 
@@ -64,19 +66,23 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 q = np.max(np.where(self.q==np.inf, 0, self.q), axis=1)
 
                 a = self.vocab.parse(self.consider_action).v
-                return np.hstack([s, a, q])
+                #self.chosen_action = chosen
+                chosen_a = self.vocab.parse(self.chosen_action).v
+                return np.hstack([s, a, q, chosen_a])
 
 
             def choose_action(self):
-
+                action='S0'
                 if self.state == 'S0':
                     chosen = self.softmax(self.values)
                     if chosen == 0:
+                        action = 'L'
                         if self.rng.rand()<0.7:
                             self.state = 'SA'
                         else:
                             self.state = 'SB'
                     else:
+                        action = 'R'
                         if self.rng.rand()<0.7:
                             self.state = 'SB'
                         else:
@@ -86,6 +92,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 else:
                     q_index = 1 if self.state=='SA' else 2
                     chosen = self.softmax(self.q[q_index])
+                    action = 'L' if chosen == 0 else 'R'
                     pp = self.reward_prob[0 if self.state=='SA' else 1,
                                          chosen]
                     reward = self.rng.rand() < pp 
@@ -99,7 +106,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                     self.q[q_index, chosen] = q
                     self.state = 'S0'
                     self.rewards.append(reward)
-
+                return action
 
             # for action selection
             def softmax(self, values):
@@ -146,14 +153,16 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 transform = np.array([vocab.parse('S0').v,
                                       vocab.parse('SA').v,
                                       vocab.parse('SB').v,])
-                nengo.Connection(env_node[-3:], prod.A, transform=transform.T) #send Q-values to product network
+                #nengo.Connection(env_node[-3:], prod.A, transform=transform.T) #send Q-values to product network
+                nengo.Connection(env_node[p.D*2+2 :p.D*3], prod.A, transform=transform.T) #send Q-values to product network
     
                 def ideal_transition(x):
                     sim_s = np.dot(x[:p.D], vocab.vectors)
                     index_s = np.argmax(sim_s)
                     s = vocab.keys[index_s]
     
-                    sim_a = np.dot(x[p.D:], vocab.vectors)
+                    #sim_a = np.dot(x[p.D:], vocab.vectors) # this is probably wrong in the original refactored code, but it doesn't seem to have any impact on performance?
+                    sim_a = np.dot(x[p.D:p.D*2], vocab.vectors)
                     index_a = np.argmax(sim_a)
                     a = vocab.keys[index_a]
     
@@ -178,12 +187,35 @@ class RLLearnProbTrial(pytry.NengoTrial):
                     return np.dot(transform.T, pp)
                     
                 #nengo.Connection(state_and_action, prod.B, function=ideal_transition)
+                
+                def inhibit(t, x):
+                    error = x[:p.D]
+                    
+                    sim_a_considered = np.dot(x[p.D:p.D*2], vocab.vectors)
+                    index_a_considered = np.argmax(sim_a_considered)
+                    a_considered = vocab.keys[index_a_considered]
+                    
+                    sim_a_chosen = np.dot(x[-5:], vocab.vectors)
+                    index_a_chosen = np.argmax(sim_a_chosen)
+                    a_chosen = vocab.keys[index_a_chosen]
+                    
+                    if a_chosen == a_considered:
+                        return error
+                    else:
+                        return np.zeros(p.D)
+                    
     
                 conn_error = nengo.Connection(state_and_action, prod.B, function=lambda x: [0]*p.D,
                                 learning_rule_type=nengo.PES(pre_synapse=z**(-int(p.T_interval*1000))),)
+                
+                inhib = nengo.Node(inhibit, size_in=p.D*3, size_out=p.D)
                                 
                 error = nengo.Ensemble(n_neurons=p.N_error, dimensions=p.D)
-                nengo.Connection(error, conn_error.learning_rule)
+                #nengo.Connection(error, conn_error.learning_rule)
+                nengo.Connection(error, inhib[:p.D])
+                nengo.Connection(env_node[p.D:p.D*2], inhib[p.D:p.D*2]) # considered action to inhib
+                nengo.Connection(env_node[-5:], inhib[-5:]) # chosen action to inhib
+                nengo.Connection(inhib, conn_error.learning_rule)
                 nengo.Connection(env_node[:p.D], error, transform=-1)
                 nengo.Connection(prod.B, error, transform=1,
                                 synapse=z**(-int(p.T_interval*1000)))
@@ -206,6 +238,10 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 nengo.Connection(prod.B, predicted_state)#, synapse=z**(-int(p.T_interval*1000)))
                 correct_pred_state = nengo.Node(size_in=5)
                 nengo.Connection(prod2.B, correct_pred_state)
+                considered_action = nengo.Node(size_in=5)
+                nengo.Connection(env_node[p.D:p.D*2], considered_action)
+                current_action = nengo.Node(size_in=5)
+                nengo.Connection(env_node[-5:], current_action)
             
         self.env = env
         self.locals = locals()
