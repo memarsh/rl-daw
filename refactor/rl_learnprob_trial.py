@@ -19,6 +19,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
         self.param('value to environment synapse length (isn\'t used in direct or rate mode)', syn=0.005)
         self.param('neurons for product network', N_product=200)
         self.param('neurons in error population', N_error=500)
+        self.param('learning rate for PES learning rule', pes_rate=1e-4)
 
     def model(self, p):
 
@@ -206,7 +207,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                     
     
                 conn_error = nengo.Connection(state_and_action, prod.B, function=lambda x: [0]*p.D,
-                                learning_rule_type=nengo.PES(pre_synapse=z**(-int(p.T_interval*1000))),)
+                                learning_rule_type=nengo.PES(learning_rate = p.pes_rate, pre_synapse=z**(-int(p.T_interval*1000))),)
                 
                 inhib = nengo.Node(inhibit, size_in=p.D*3, size_out=p.D)
                                 
