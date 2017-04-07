@@ -164,8 +164,9 @@ with model:
         transform = np.array([vocab.parse('S0').v,
                               vocab.parse('SA').v,
                               vocab.parse('SB').v,])
-        nengo.Connection(env_node[D*2+2:D*3], prod.A, transform=transform.T) #send Q-values to product network
-
+        nengo.Connection(env_node[-(D+3):-D], prod.A, transform=transform.T) #send Q-values to product network
+        # yeah the above will only work for D=5
+        
         def ideal_transition(x):
             sim_s = np.dot(x[:D], vocab.vectors)
             index_s = np.argmax(sim_s)
@@ -237,19 +238,19 @@ with model:
         nengo.Connection(prod.output, learned_value_plot, transform=np.ones((1, D)))
         actual_value_plot = nengo.Node(size_in=1)
         prod2 = nengo.networks.Product(n_neurons=N_product, dimensions=D)
-        nengo.Connection(env_node[D*2+2:D*3], prod2.A, transform=transform.T)
+        nengo.Connection(env_node[-(D+3):-D], prod2.A, transform=transform.T) # yeah this will only work for D=5
         nengo.Connection(state_and_action, prod2.B, function=ideal_transition)
         nengo.Connection(prod2.output, actual_value_plot, transform=np.ones((1, D)))
-        state_to_error = nengo.Node(size_in=5)
+        state_to_error = nengo.Node(size_in=D)
         nengo.Connection(env_node[:D], state_to_error, transform=-1)
-        predicted_state = nengo.Node(size_in=5)
+        predicted_state = nengo.Node(size_in=D)
         nengo.Connection(prod.B, predicted_state)#, synapse=z**(-int(T_interval*1000)))
-        correct_pred_state = nengo.Node(size_in=5)
+        correct_pred_state = nengo.Node(size_in=D)
         nengo.Connection(prod2.B, correct_pred_state)
         # check if Q-values are same to both product networks
-        q_prod = nengo.Node(size_in = 5)
+        q_prod = nengo.Node(size_in = D)
         nengo.Connection(prod.A, q_prod)
-        q_prod2 = nengo.Node(size_in=5)
+        q_prod2 = nengo.Node(size_in=D)
         nengo.Connection(prod2.A, q_prod2)
     
 #self.env = env

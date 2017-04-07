@@ -155,7 +155,8 @@ class RLLearnProbTrial(pytry.NengoTrial):
                                       vocab.parse('SA').v,
                                       vocab.parse('SB').v,])
                 #nengo.Connection(env_node[-3:], prod.A, transform=transform.T) #send Q-values to product network
-                nengo.Connection(env_node[p.D*2+2 :p.D*3], prod.A, transform=transform.T) #send Q-values to product network
+                nengo.Connection(env_node[-(p.D+3) :-p.D], prod.A, transform=transform.T) #send Q-values to product network
+                # yeah the above will only work for D=5
     
                 def ideal_transition(x):
                     sim_s = np.dot(x[:p.D], vocab.vectors)
@@ -230,7 +231,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 nengo.Connection(prod.output, learned_value_plot, transform=np.ones((1, p.D)))
                 actual_value_plot = nengo.Node(size_in=1)
                 prod2 = nengo.networks.Product(n_neurons=p.N_product, dimensions=p.D)
-                nengo.Connection(env_node[-3:], prod2.A, transform=transform.T)
+                nengo.Connection(env_node[-(p.D+3):-p.D], prod2.A, transform=transform.T)# yeah this will only work for D=5
                 nengo.Connection(state_and_action, prod2.B, function=ideal_transition)
                 nengo.Connection(prod2.output, actual_value_plot, transform=np.ones((1, p.D)))
                 state_to_error = nengo.Node(size_in=5)
@@ -242,7 +243,9 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 considered_action = nengo.Node(size_in=5)
                 nengo.Connection(env_node[p.D:p.D*2], considered_action)
                 current_action = nengo.Node(size_in=5)
-                nengo.Connection(env_node[-5:], current_action)
+                nengo.Connection(env_node[-p.D:], current_action)
+                q_prod = nengo.Node(size_in = p.D)
+                nengo.Connection(prod.A, q_prod)
             
         self.env = env
         self.locals = locals()
@@ -293,6 +296,6 @@ class RLLearnProbTrial(pytry.NengoTrial):
 
 if __name__ == '__builtin__':
     rl = RLLearnProbTrial()
-    model = rl.make_model(T_interval=0.3, rate=True)
+    model = rl.make_model(T_interval=0.3, rate=True, N_state_action=1000, N_product=1000)
     for k, v in rl.locals.items():
         locals()[k] = v
