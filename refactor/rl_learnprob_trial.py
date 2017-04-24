@@ -14,7 +14,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
         self.param('neurons for state and action', N_state_action=500)
         self.param('intervals to run', n_intervals=10)
         self.param('run in direct mode', direct=False)
-        self.param('random seed for environment', env_seed=2)
+        self.param('random seed for environment', env_seed=1)
         self.param('run with rate neurons', rate=False)
         self.param('value to environment synapse length (isn\'t used in direct or rate mode)', syn=0.005)
         self.param('neurons for product network', N_product=200)
@@ -197,7 +197,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                     index_a_considered = np.argmax(sim_a_considered)
                     a_considered = vocab.keys[index_a_considered]
                     
-                    sim_a_chosen = np.dot(x[-5:], vocab.vectors)
+                    sim_a_chosen = np.dot(x[-p.D:], vocab.vectors)
                     index_a_chosen = np.argmax(sim_a_chosen)
                     a_chosen = vocab.keys[index_a_chosen]
                     
@@ -229,17 +229,17 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 # for plotting
                 learned_value_plot = nengo.Node(size_in=1)
                 nengo.Connection(prod.output, learned_value_plot, transform=np.ones((1, p.D)))
-                actual_value_plot = nengo.Node(size_in=1)
-                prod2 = nengo.networks.Product(n_neurons=p.N_product, dimensions=p.D)
-                nengo.Connection(env_node[-(p.D+3):-p.D], prod2.A, transform=transform.T)# yeah this will only work for D=5
-                nengo.Connection(state_and_action, prod2.B, function=ideal_transition)
-                nengo.Connection(prod2.output, actual_value_plot, transform=np.ones((1, p.D)))
+                #actual_value_plot = nengo.Node(size_in=1)
+                #prod2 = nengo.networks.Product(n_neurons=p.N_product, dimensions=p.D)
+                #nengo.Connection(env_node[-(p.D+3):-p.D], prod2.A, transform=transform.T)# yeah this will only work for D=5
+                #nengo.Connection(state_and_action, prod2.B, function=ideal_transition)
+                #nengo.Connection(prod2.output, actual_value_plot, transform=np.ones((1, p.D)))
                 state_to_error = nengo.Node(size_in=5)
                 nengo.Connection(env_node[:p.D], state_to_error, transform=-1)
                 predicted_state = nengo.Node(size_in=5)
                 nengo.Connection(prod.B, predicted_state)#, synapse=z**(-int(p.T_interval*1000)))
-                correct_pred_state = nengo.Node(size_in=5)
-                nengo.Connection(prod2.B, correct_pred_state)
+                #correct_pred_state = nengo.Node(size_in=5)
+                #nengo.Connection(prod2.B, correct_pred_state)
                 considered_action = nengo.Node(size_in=5)
                 nengo.Connection(env_node[p.D:p.D*2], considered_action)
                 current_action = nengo.Node(size_in=5)
@@ -296,6 +296,6 @@ class RLLearnProbTrial(pytry.NengoTrial):
 
 if __name__ == '__builtin__':
     rl = RLLearnProbTrial()
-    model = rl.make_model(T_interval=0.3, rate=True, N_state_action=1000, N_product=1000)
+    model = rl.make_model(T_interval=0.3, rate=False, N_state_action=500, N_product=200)
     for k, v in rl.locals.items():
         locals()[k] = v
