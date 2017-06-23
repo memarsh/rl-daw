@@ -21,6 +21,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
         self.param('neurons in error population', N_error=500)
         self.param('learning rate for PES learning rule', pes_rate=1e-4)
         self.param('number of learning trials', learn_intervals=2)
+        self.param('don\'t set this!', future=True)
 
     def model(self, p):
 
@@ -226,9 +227,9 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 nengo.Connection(env_node[p.D:p.D*2], inhib[p.D:p.D*2]) # considered action to inhib
                 nengo.Connection(env_node[-5:], inhib[-5:]) # chosen action to inhib
                 nengo.Connection(inhib, conn_error.learning_rule)
-                nengo.Connection(env_node[:p.D], error, transform=-1)
+                nengo.Connection(env_node[:p.D], error, transform=-1) # actual state to error
                 nengo.Connection(prod.B, error, transform=1,
-                                synapse=z**(-int(p.T_interval*1000)))
+                                synapse=z**(-int(p.T_interval*1000))) # state prediction vector
     
                 if p.rate or p.direct:
                     nengo.Connection(prod.output, env_node, transform=np.ones((1, p.D)), synapse=0)
@@ -245,7 +246,7 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 state_to_error = nengo.Node(size_in=5)
                 nengo.Connection(env_node[:p.D], state_to_error, transform=-1)
                 predicted_state = nengo.Node(size_in=5)
-                nengo.Connection(prod.B, predicted_state)#, synapse=z**(-int(p.T_interval*1000)))
+                nengo.Connection(prod.B, predicted_state, synapse=z**(-int(p.T_interval*1000)))
                 #correct_pred_state = nengo.Node(size_in=5)
                 #nengo.Connection(prod2.B, correct_pred_state)
                 considered_action = nengo.Node(size_in=5)
@@ -254,6 +255,8 @@ class RLLearnProbTrial(pytry.NengoTrial):
                 nengo.Connection(env_node[-p.D:], current_action)
                 q_prod = nengo.Node(size_in = p.D)
                 nengo.Connection(prod.A, q_prod)
+
+                #weight_probe = nengo.Probe(conn_error, 'weights', sample_every=p.T_interval*1000)
             
         self.env = env
         self.locals = locals()
@@ -275,6 +278,8 @@ class RLLearnProbTrial(pytry.NengoTrial):
             stays[rare[i], rewards[i]] += stay
             counts[rare[i], rewards[i]] +=1
         stay_prob = stays/counts
+
+        #weights = sim.data[weight_probe]
 
         if plt:
             data = []
@@ -298,12 +303,13 @@ class RLLearnProbTrial(pytry.NengoTrial):
         return dict(
                 history=history,
                 rewards=rewards,
+                #weights=weights,
                 stay_prob=stay_prob,
                 )
 
 
 if __name__ == '__builtin__':
     rl = RLLearnProbTrial()
-    model = rl.make_model(T_interval=0.3, rate=False, N_state_action=500, N_product=200, learn_intervals=20)
+    model = rl.make_model(T_interval=0.1, rate=False, N_state_action=500, N_product=200, learn_intervals=20000)
     for k, v in rl.locals.items():
         locals()[k] = v
