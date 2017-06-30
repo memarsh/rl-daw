@@ -294,47 +294,119 @@ pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_inter
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 10 --seed 10
 
 
-# TODO runs with seeds 11-20
+# DONE
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10 --seed 20
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 11 --seed 20
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 12 --seed 20
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 13 --seed 20
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 14 --seed 20
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 15 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 16 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 17 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 18 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 19 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 2 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 3 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 4 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 5 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 6 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 7 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 8 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 9 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 70 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 50 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 20 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 100 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 200 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 300 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 400 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 70 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 5 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.1 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.2 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.4 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.5 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.6 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.7 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.8 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.9 --seed 20
-pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 1.0 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 16 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 17 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 18 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 19 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 2 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 3 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 4 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 5 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 6 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 7 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 8 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 9 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 70 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 50 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 20 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 100 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 200 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 300 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 400 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 70 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 5 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.1 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.2 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.4 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.5 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.6 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.7 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.8 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 0.9 --seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --alpha 1.0 --seed 17
+
+#DONE
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 10 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_product 10 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 10 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 20 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 70 --N_error 50 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.01 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.02 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.03 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.04 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.2 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 20
 
 
-
+#running
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 11 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 12 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 13 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 14 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 15 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 16 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 17 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 18 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 19 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 2 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 3 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 4 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 5 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 6 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 7 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 8 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 9 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 10 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 11 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 12 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 13 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 14 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 15 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 16 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 17 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 18 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 19 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 20 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 2 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 3 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 4 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 5 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 6 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 7 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 8 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 9 --seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 10 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 11 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 12 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 13 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 14 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 15 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 16 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 17 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 18 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 19 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 20 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 2 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 3 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 4 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 5 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 6 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 7 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 8 --seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 9 --seed 10
 
 # Other things to look at:
 # softmax choice noise (seems like it should have predictable effect) - but maybe I should check it anyway
