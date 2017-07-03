@@ -349,7 +349,7 @@ pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_inter
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 20
 
 
-#running
+#DONE
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10 --seed 10
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 11 --seed 10
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 12 --seed 10
@@ -407,6 +407,27 @@ pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_inter
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 7 --seed 10
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 8 --seed 10
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 9 --seed 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Other things to look at:
 # softmax choice noise (seems like it should have predictable effect) - but maybe I should check it anyway
