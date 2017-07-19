@@ -409,12 +409,1009 @@ pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_inter
 pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --env_seed 9 --seed 10
 
 
+# non-learning model in cogsci/refactor folder (only running with seeds 1 and 11 to start) T_interval 0.5
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.049 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.025 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.1 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --syn 0.01 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.5 --env_seed 9 --seed 1
+
+
+
+# T_interval 0.51
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.049 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.025 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.1 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --syn 0.01 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 9 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.51 --env_seed 9 --seed 1
+
+
+#TODO: the above but with T_intervals of 0.3 and 0.2
+# maybe try other nengo seeds??? argh, no, it's taking way too long!
+# non-learning model in cogsci/refactor folder (only running with seeds 1 and 11 to start) T_interval 0.3
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 9 --seed 1
+
+
+
+# T_interval 0.2
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 9 --seed 1
+
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 20 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 9 --seed 1
+
+
+
+
+# time interval individual differences test
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 1 
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 2
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 3
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 4
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 5
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 6
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 7
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 8
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 9
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 11
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 12
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 13
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 14
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 15
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 16
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 17
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 18
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 19
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --env_seed 20
+
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 1 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 1 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.2 --seed 1 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 1 --env_seed 20 
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.2 --seed 1 --env_seed 11
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 1 --env_seed 11
+
+
+#more synapse data for time interval 0.1 NLM
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 19 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.049 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 19 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.025 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 19 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 20 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.1 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 19 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --syn 0.01 --env_seed 9 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 10 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 11 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 12 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 13 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 14 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 15 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 16 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 17 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 18 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 19 --seed 1
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 1 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 2 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 3 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 4 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 5 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 6 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 7 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 8 --seed 1
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.1 --env_seed 9 --seed 1
+
+
+
+# running: time interval individual differences learning model with fewer neurons
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.05 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.2 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 20
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.1 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.2 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.3 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10
+pytry rl_learnset_trial.py --learn_intervals 20000 --n_intervals 20000 --T_interval 0.4 --seed 1 --N_state_action 50 --N_product 70 --N_error 50 --env_seed 10
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# probably shouldn't bother running these, but just in case:
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.049 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.025 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 2 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.1 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --syn 0.01 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.3 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.049 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.025 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 2 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.1 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --syn 0.01 --env_seed 9 --seed 11
+
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 10 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 11 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 12 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 13 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 14 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 15 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 16 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 17 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 18 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 19 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 20 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 1 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 3 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 4 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 5 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 6 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 7 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 8 --seed 11
+pytry rl_synapse_trial.py --n_intervals 20000  --T_interval 0.2 --env_seed 9 --seed 11
 
 
 
